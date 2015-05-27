@@ -60,7 +60,7 @@ Components are required to not do anything in global scope, which rules out invo
 
 ## Why not jQuery?
 
-jQuery is a commonly requested general purpose library, and may well already be on a product page due to use in the product or demands from advertisers.  However, component authors *should* avoid using jQuery.  As a whole, jQuery is an example of a [god object](http://en.wikipedia.org/wiki/God_object) which poses problems for smooth upgrading of component dependencies (it's much easier to update things if they have smaller APIs and fewer dependents).
+jQuery is a commonly requested general purpose library, and may well already be on a product page due to use in the product or demands from advertisers.  However, component authors *should* [avoid](http://youmightnotneedjquery.com/) using jQuery.  As a whole, jQuery is an example of a [god object](http://en.wikipedia.org/wiki/God_object) which poses problems for smooth upgrading of component dependencies (it's much easier to update things if they have smaller APIs and fewer dependents).
 
 There are also specific modules within jQuery that don't operate in an optimal way:
 
