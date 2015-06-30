@@ -4,6 +4,8 @@ title: Vegetable Lasagne
 permalink: /docs/recipes/vegetable-lasagne/
 ---
 
+# Roasted vegetable lasagne
+
 ## Ingredients
 
 * 3 red peppers
