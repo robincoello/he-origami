@@ -82,7 +82,7 @@ If you see an error, or the version does not match the latest version shown on t
 <kbd>npm install -g gulp</kbd>
 </pre>
 
-This command may prompt you for your password.  You will need administrative access to your machine to complete this step.  On FT-managed machines the password is typically the same as the password you use to log into the corporate network.
+This command may prompt you for your password.  You will need administrative access to your machine to complete this step.  On Pearson-owned machines, this will typically be your PEROOT password.
 
 
 ## 3. Install origami build tools
@@ -134,7 +134,7 @@ Once you know which Origami modules you want, create a `bower.json` file in the 
 			"o-footer": "^3.0.0",
 			"o-colors": "^2.4.7",
 			"o-fonts": "^1.6.7",
-			"o-ft-icons": "^2.3.4"
+			"o-icons": "^2.3.4"
 		}
 	}
 
@@ -182,18 +182,18 @@ As an example (assuming you loaded these modules in your `bowser.json`), create 
 	$o-fonts-is-silent: false;
 
 	// Output icon helper classes
-	$o-ft-icons-is-silent: false;
+	$o-icons-is-silent: false;
 
 	// Import Origami components
 	@import 'o-grid/main';
 	@import 'o-fonts/main';
-	@import 'o-ft-icons/main';
+	@import 'o-icons/main';
 	@import 'o-header/main';
 	@import 'o-footer/main';
 	@import 'o-colors/main';
 
-	// Store the default FT sans-serif font stack in a variable
-	$sans-serif: oFontsGetFontFamilyWithFallbacks(BentonSans);
+	// Store the default sans-serif font stack in a variable
+	$sans-serif: oFontsGetFontFamilyWithFallbacks(HelveticaNeue);
 
 	html {
 		// The iconic pink background

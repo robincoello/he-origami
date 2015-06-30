@@ -11,9 +11,9 @@ The Origami team maintains this site and specification, components and component
 
 ## Strategic vision
 
-Everything Origami does is in line with our vision which is twofold: create a unified style for FT websites, and make building websites faster.
+Everything Origami does is in line with our vision which is twofold: create a unified style for Higher Ed websites, and make building websites faster.
 
-### Create a unified style and experience for FT websites
+### Create a unified style and experience for Higher Ed websites
 
 Users find it easier to use our websites if they share a consistent brand identity.  This doesn't mean they all have to stick rigidly to a template or even that there is even on single element that they all have to share.  It's more about establishing a strong consistency of design ethos across sites, so that it's easier to make things match, and when there's no good reason for things to differ, they do match.
 
@@ -64,7 +64,7 @@ The spec editor may choose to skip advisory group approval at their discretion, 
 
 ## Advisory group
 
-The Origami advisory group comprises senior front end developers from across FT technology.  Advisory group members are responsible for:
+The Origami advisory group comprises senior front end developers from across Higher Ed technology.  Advisory group members are responsible for:
 
 * subscribing to the `front-end-web` mailing list
 * subscribing to Origami spec changes via GitHub
@@ -74,10 +74,8 @@ The Origami advisory group comprises senior front end developers from across FT 
 
 Current members:
 
-* Rhys Evans (ft.com)
-* Luke Kavanagh (Interactive graphics)
-* Stuart Turner (Advertising)
-* Matt Andrews (Next FT)
-* James Nicholls (Membership)
-* TBC (Specialist titles)
-* TBC (Web app)
+* Aamir Motiwala (UX Architecture)
+* Deepak Bhagchandani
+* Vanita Jain (REVEL)
+* Adam Armour (Console / Console Components)
+* Meredith Williamson (UX)

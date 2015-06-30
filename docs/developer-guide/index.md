@@ -7,7 +7,7 @@ permalink: /docs/developer-guide/
 
 #Developer guide
 
-When you're building a new web product, chances are you need a lot of stuff that's common across many FT sites.  Origami **modules** provide you with common functional components, behaviours, layouts and styles, while Origami **web services** provide dynamic data services and markup feeds.
+When you're building a new web product, chances are you need a lot of stuff that's common across many Higher Ed sites.  Origami **modules** provide you with common functional components, behaviours, layouts and styles, while Origami **web services** provide dynamic data services and markup feeds.
 
 ##Web services
 

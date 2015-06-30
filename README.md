@@ -1,6 +1,6 @@
 ## This is a gh-pages branch
 
-Please visit http://origami.ft.com to view the site
+Please visit https://pearson-higher-ed.github.io/he-origami to view the site
 
 ## Building
 

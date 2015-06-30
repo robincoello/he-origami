@@ -25,4 +25,4 @@ These rules apply to any code written as part of an Origami component, and provi
 
 ## Data models
 
-Use of [Microdata](http://schema.org/docs/gs.html) is not compulsory but strongly encouraged.  Use an FT model if one is available. Failing that use the most appropriate schema from schema.org.
+Use of [Microdata](http://schema.org/docs/gs.html) is not compulsory but strongly encouraged.  Use a Pearson / Higher Ed model if one is available. Failing that use the most appropriate schema from schema.org.

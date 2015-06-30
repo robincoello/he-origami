@@ -16,7 +16,7 @@ permalink: /docs/component-spec/modules/
 * Header
 * Cookie notice
 * Footer
-* FT Main navigation (styles and behaviours only, not content)
+* Global navigation
 
 ## File structure
 
@@ -54,7 +54,7 @@ When building a new module, you may create the directory structure and add all n
 
 Modules *must* be named using a short descriptive term (hyphenated if necessary) prefixed with `o-` (for Origami) as the name for the repository and CSS classes.
 
-<aside>Examples of good module names include <code>o-tweet</code>, <code>o-colors</code>, <code>o-grid</code>, <code>o-tabs</code>, <code>o-tabs-style1</code>, <code>o-cookiewarn</code>, <code>o-nav</code>.  There is no standard or requirement for the use of <code>-ft-</code> in the name, and for the purposes of this spec it is semantically meaningless.</aside>
+<aside>Examples of good module names include <code>o-header</code>, <code>o-colors</code>, <code>o-grid</code>, <code>o-tabs</code>, <code>o-cookiewarn</code>, <code>o-collapse</code>.</aside>
 
 
 ## Requirements
@@ -77,7 +77,7 @@ The following requirements apply to creating a Origami-compatible module compone
 * include a README.md file in the root of the repo, which must contain, where applicable:
 	* Any markup structure on which the module depends (if that markup is not provided by a web service).  For example, a module providing CSS to style postal addresses, should include a guide to writing the correct markup.  A JavaScript module that requires configuration via `data-` attributes should document those attributes.
 	* Links to repos of web services that exist to provide markup or data that is used by the module.
-* be stored in a Git repo accessible to any FT network (see [recommendations for module locations](#where-to-store-modules) below)
+* be stored in a Git repo accessible to any Pearson network (see [recommendations for module locations](#where-to-store-modules) below)
 * not include package management config for any package manager other than Bower, except for package config whose only purpose is to load dependencies for development or testing of the component and which does not render the repo installable by that packaging system
 * where they contain Sass files, conform to the syntax and language standards for [use of Sass in Origami components]({{site.baseurl}}/docs/syntax/scss)
 * where they contain JavaScript files, conform to the syntax and language standards for [use of JavaScript in Origami components]({{site.baseurl}}/docs/syntax/javascript)
@@ -308,6 +308,6 @@ The versions tested *should* be listed in the module's documentation, so that wh
 
 Modules *must* be stored in git repositories with the same name as the module itself.  The host server *must* be one of the following, listed in order of preference (from most preferred to least):
 
-1. Public repository on GitHub (<https://github.com/Financial-Times>)
-2. Stash (git.svc.ft.com:8080)
-3. Private repository on public GitHub (<https://github.com/Financial-Times>)
+1. Public repository on GitHub (<https://github.com/Pearson-Higher-Ed>)
+2. Stash (<https://devops-tools.pearson.com/stash/projects/ORC>)
+3. Private repository on public GitHub (<https://github.com/Pearson-Higher-Ed>)

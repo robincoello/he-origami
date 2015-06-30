@@ -7,7 +7,7 @@ permalink: /docs/developer-guide/general-best-practices/
 
 # General best practices for front end development
 
-Origami requires a high standard of developers who make components for use by others, but many of these same rules are just good practices for anyone that builds websites using the web technologies of HTML, CSS and JavaScript.  If you are building an FT site, please use the following checklist for up to date guidance on the best practies you should be following in your web development.
+Origami requires a high standard of developers who make components for use by others, but many of these same rules are just good practices for anyone that builds websites using the web technologies of HTML, CSS and JavaScript.  If you are building a Higher Ed site, please use the following checklist for current guidance on the best practies you should be following in your web development.
 
 In addition to the rules below, the [Google Web Fundamentals documentation](https://developers.google.com/web/fundamentals) is a good resource for developing best practices.
 
