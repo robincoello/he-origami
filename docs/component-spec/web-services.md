@@ -33,10 +33,10 @@ Web services *must* expose an HTTP endpoint on the hostname `{componentname}.web
 ## Requirements
 
 ### Web services *must*
-* contain a valid [Origami manifest file]({{site.baseurl}}/docs/syntax/origamijson)
+* contain a valid [Origami manifest file]({{site.baseurl}}/docs/syntax/origamijson/)
 * Include a mandatory version number element to the API path for all API endpoints
 * *not* expose minor version changes in the web service application on the version number included in the API endpoint URL
-* Meet the [standard for HTML]({{site.baseurl}}/docs/syntax/html) when relevant
+* Meet the [standard for HTML]({{site.baseurl}}/docs/syntax/html/) when relevant
 * Require requests to API endpoints to contain an identification string set by the requesting application, either in a `source` query string parameter or an `X-FT-Source` HTTP header.  *Must* support the query string parameter, and *should* support the header (if header is supported and the service supports CORS, it *must* also support a pre-flight check to allow the header to be sent from foreign origins).  If neither the header nor the query param is present, *must* return a `400 Bad Request` response status code.  Requests to non-API endpoints such as the root path or /__about *should not* require the source parameter.
 * Provide monitoring endpoints and data conforming to the [FT Health page standard](https://docs.google.com/a/ft.com/document/d/18hefJjImF5IFp9WvPAm9Iq5_GmWzI9ahlKSzShpQl1s/edit)
 * When an error occurs that prevents the service returning the output requested, the HTTP response code *must* be in the 5xx or 4xx range, and:
@@ -96,10 +96,10 @@ Web services *must* implement the following endpoints, for each version of the a
 <table class="o-techdocs-table">
 <tr><td><code>/</code></td><td>Description of the service and instructions for use, designed for human consumption.  This <em>should</em> be HTML, and <em>may</em> choose to use the standard Origami documentation stylesheet.</td></tr>
 <tr><td><code>/__health</code></td><td>Health status JSON data conforming to the <a href="https://docs.google.com/a/ft.com/document/d/18hefJjImF5IFp9WvPAm9Iq5_GmWzI9ahlKSzShpQl1s/edit">FT Health check standard</a>.  Note that the health check standard currently requires the alerts to be output in a 'human readable' form, and that may require implementing additional endpoints (or reformatting at the edge)</td></tr>
-<tr><td><code>/__about</code></td><td><em>(root only)</em> A JSON document linking to all available versions of the service, in the <a href='{{site.baseurl}}/docs/syntax/web-service-index'>web service index format</a><br/><em>(version endpoints only)</em> A JSON document in the <a href='{{site.baseurl}}/docs/syntax/web-service-description'>web service description format</a></td></tr>
+<tr><td><code>/__about</code></td><td><em>(root only)</em> A JSON document linking to all available versions of the service, in the <a href='{{site.baseurl}}/docs/syntax/web-service-index/'>web service index format</a><br/><em>(version endpoints only)</em> A JSON document in the <a href='{{site.baseurl}}/docs/syntax/web-service-description/'>web service description format</a></td></tr>
 </table>
 
-If a web service has two versions, `v1` and `v2`, there *must* be three of each of the above.  Using the `/health` endpoint as an example, the complete paths `/__health`, `/v1/__health` and `/v2/__health` *must* be recognised and served by the web service, and *may* return the same content.  The `__about` data *must* also be available from three URLs, but will follow the [web service description format]({{site.baseurl}}/docs/syntax/web-service-description) format for those that are version prefixed, and the [web service index]({{site.baseurl}}/docs/syntax/web-service-index) format for the one that isn't.
+If a web service has two versions, `v1` and `v2`, there *must* be three of each of the above.  Using the `/health` endpoint as an example, the complete paths `/__health`, `/v1/__health` and `/v2/__health` *must* be recognised and served by the web service, and *may* return the same content.  The `__about` data *must* also be available from three URLs, but will follow the [web service description format]({{site.baseurl}}/docs/syntax/web-service-description/) format for those that are version prefixed, and the [web service index]({{site.baseurl}}/docs/syntax/web-service-index/) format for the one that isn't.
 
 ### De-duplication of output
 
@@ -107,7 +107,7 @@ Web service components *should* not offer any de-duplication of content.  If a p
 
 ## Metrics
 
-Web service components *should* emit metrics over TCP using the [Carbon plaintext protocol](http://graphite.readthedocs.org/en/latest/feeding-carbon.html), to the FT Graphite service.  All metrics *must* conform to the [metrics naming conventions]({{site.baseurl}}/docs/syntax/metrics).
+Web service components *should* emit metrics over TCP using the [Carbon plaintext protocol](http://graphite.readthedocs.org/en/latest/feeding-carbon.html), to the FT Graphite service.  All metrics *must* conform to the [metrics naming conventions]({{site.baseurl}}/docs/syntax/metrics/).
 
 Web services *should* send metrics no more frequently than every 5 seconds, and should consult the monitoring team before sending more than 100,000 data points per hour.
 
@@ -135,7 +135,7 @@ The following client libraries make submitting metrics easier:
 
 ## Example
 
-The following HTTP request-response is compliant with the above requirements and the [syntax requirements]({{site.baseurl}}/docs/syntax-requirements) for the response body:
+The following HTTP request-response is compliant with the above requirements and the [syntax requirements]({{site.baseurl}}/docs/syntax-requirements/) for the response body:
 
 	GET /v1/navigation.html?level=first&selectedUrl=http%3A%2F%2Fwww.ft.com%2Fcompanies HTTP/1.1
 	User-Agent: curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8x zlib/1.2.5

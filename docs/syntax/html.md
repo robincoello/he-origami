@@ -44,7 +44,7 @@ Where Origami components include or output HTML, it should meet the following re
 	* target
 	* Event handler attributes, e.g. `onclick`, `onchange`
 * The root element of a fragment of markup that represents a module (see also [owned DOM](#owned-dom)), *must*
-	* have a class name equal to its module name (which will start `o-`, see also [SCSS standards]({{site.baseurl}}/docs/syntax/scss) for further details of class naming)
+	* have a class name equal to its module name (which will start `o-`, see also [SCSS standards]({{site.baseurl}}/docs/syntax/scss/) for further details of class naming)
 	* have a `data-o-component` attribute with the name of the component from which the markup is sourced
 * Inline SVG included within HTML *must not* use self closing tags (i.e. all `<path>` elements must have an `</path>` tag).  [More details](https://github.com/Financial-Times/ft-origami/issues/66)
 
@@ -82,7 +82,7 @@ Component authors are encouraged to provide assistive accessibility information 
 
 ## Tracking
 
-In accordance with the [JavaScript standards]({{site.baseurl}}/docs/syntax/js), it's OK for a module to act on elements outside its owned portion of the DOM if those elements are tagged with data attributes within the module's namespace.  This principle is used to enable tracking of other modules by the track module.  Since the need for tracking is extremely common, these are defined as part of Origami itself:
+In accordance with the [JavaScript standards]({{site.baseurl}}/docs/syntax/js/), it's OK for a module to act on elements outside its owned portion of the DOM if those elements are tagged with data attributes within the module's namespace.  This principle is used to enable tracking of other modules by the track module.  Since the need for tracking is extremely common, these are defined as part of Origami itself:
 
 * Where a portion of DOM comprises a list of links, the attribute `data-track-pos` should be added to the parent of each link.  The value of the attribute should be an integer reflecting the link's zero-based index in the list.
 * Where a portion of DOM has distinct sub-regions that is worth tracking separately, such as a sub-list of links inside a list of links, the data attribute `data-track-region` should be added to the element enclosing the region.  The value may be any string describing the enclosed content.

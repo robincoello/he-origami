@@ -94,7 +94,7 @@ The most catastrophic consequence of this happens when the wrapper template is u
 
 The web has grown up, and discovered concepts that have been around in all other kinds of software engineering for years.  By using those long-established principles we can bring robustness and scale to our web engineering.
 
-We've published a set of [principles]({{site.baseurl}}/docs/overview/principles) that will guide the development of a new generation of components to gradually replace what we have today.  Here's the FT.com homepage, and how it might be divided into components:
+We've published a set of [principles]({{site.baseurl}}/docs/overview/principles/) that will guide the development of a new generation of components to gradually replace what we have today.  Here's the FT.com homepage, and how it might be divided into components:
 
 ![Components on a page]({{site.baseurl}}/img/componentspage.png)
 
