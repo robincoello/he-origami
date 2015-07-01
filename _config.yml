@@ -1,6 +1,6 @@
 name: HE-Origami
 highlighter: pygments
 relative_permalinks: false
-baseurl: /he-origami
+baseurl:
 exclude: [scss, node_modules, bower.json, Gruntfile.js, package.json, README.md]
 markdown: kramdown
