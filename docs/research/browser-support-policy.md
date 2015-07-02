@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Browser policy
+title: Browser support policy
 permalink: /docs/research/browser-support-policy/
 ---
 
