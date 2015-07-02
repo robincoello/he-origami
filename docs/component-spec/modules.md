@@ -162,7 +162,7 @@ Optionally, a module *may* include an npm-compatible `package.json` file, to all
 
 * *Must* include a `private` property with the value set to `true`.
 * *Must* include a `devDependencies` object *if* the module has any npm dependencies for dev or testing
-* *Must not* include any of the following: `dependencies`, `files`, `bugs`, `publishConfig`, `preferGlobal`, `cpu`, `os`, `engineStrict`, `engines`, `config`, `bin`. `main` and `version` *should not* be included unless the module has a server side use case (see 'Isomorphic modules' below)
+* *Must not* include any of the following: `dependencies`, `files`, `bugs`, `publishConfig`, `preferGlobal`, `cpu`, `os`, `engineStrict`, `engines`, `config`, `bin`. `main` and `version` *should not* be included unless the module has a server side use case (see **Universal modules** below)
 * *May* include any other standard npm-defined property
 
 The following is an example `package.json` file that meets the above spec:
@@ -176,7 +176,7 @@ The following is an example `package.json` file that meets the above spec:
 		"private": true
 	}
 
-### Isomorphic modules
+### Universal modules
 
 Some modules' JavaScript may have use cases outside the browser, most notably in Node.js applications e.g. `o-date` can be used to format dates in the browser or on the server. Where there is a definite need for this modules *should* include a `package.json` with the following properties:
 
