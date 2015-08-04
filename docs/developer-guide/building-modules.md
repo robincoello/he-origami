@@ -234,7 +234,7 @@ As an example, create a `main.js` file at `/client/js/main.js`, containing:
 		document.dispatchEvent(new CustomEvent('o.DOMContentLoaded'));
 	}
 	document.addEventListener('DOMContentLoaded', function() {
-		// Dispatch a custom event that will tell all required modules to initialise
+		// Dispatch a custom event that will tell all required modules to initialize
 		document.dispatchEvent(new CustomEvent('o.DOMContentLoaded'));
 	});
 

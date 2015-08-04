@@ -11,7 +11,7 @@ This front end strategy commits us to the following principles.  Origami's maint
 
 ## 1. Everything governed by standards
 
-We'll favour solutions that use industry standards over those that define anything Higher Ed specific.  Equally we'll favour widely applicable Higher Ed standards over those that are specific or narrow in focus.  Standards, where defined, will be clear, specific in scope, and unambiguous.
+We'll favor solutions that use industry standards over those that define anything Higher Ed specific.  Equally we'll favor widely applicable Higher Ed standards over those that are specific or narrow in focus.  Standards, where defined, will be clear, specific in scope, and unambiguous.
 
 ## 2. No special cases
 

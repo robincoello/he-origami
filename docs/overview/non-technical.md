@@ -22,7 +22,7 @@ Contents:
 
 ## The problems we're solving
 
-For FT to thrive as a digital organisation, we need to solve some serious technology problems.  They thwart our attempts to do innovative work.  They suck up development resources and leave us with nothing to move forward with.  They threaten to leave us constantly fighting to keep up with our competition.
+For FT to thrive as a digital organization, we need to solve some serious technology problems.  They thwart our attempts to do innovative work.  They suck up development resources and leave us with nothing to move forward with.  They threaten to leave us constantly fighting to keep up with our competition.
 
 * Despite having limited technology resources, **we do the same work multiple times**, like slideshows, which have had to be implemented repeatedly on many websites
 * The way pages are assembled, and how they function is esoteric. This makes is very difficult for 3rd parties, or even other business units, to make sense of work already completed and make use of it.  It leads to inconsistency, bloated software and brand divergence.
@@ -36,7 +36,7 @@ For FT to thrive as a digital organisation, we need to solve some serious techno
 
 ### Repeating work&hellip;again, again, again
 
-<p class="lead">Over the years, FT has evolved from having digital represent a tiny fraction of a huge print operation to having it in the centre of the business.  Along the way we've created or acquired over <acronym title="Measured by number of domain names owned by the FT"><b>six hundred websites</b></acronym> and <b>eight hundred <code><em>something</em>.ft.com</code> sites</b>.  Every time we build a new website, we repeat work done before, and we waste time and money.</p>
+<p class="lead">Over the years, FT has evolved from having digital represent a tiny fraction of a huge print operation to having it in the center of the business.  Along the way we've created or acquired over <acronym title="Measured by number of domain names owned by the FT"><b>six hundred websites</b></acronym> and <b>eight hundred <code><em>something</em>.ft.com</code> sites</b>.  Every time we build a new website, we repeat work done before, and we waste time and money.</p>
 
 There are lots of examples of this kind of thing.  While www.ft.com has always been the 'core product' and generally received changes in design first, other sites that are 'FT style' take time to convert over.  The full cost of redesigning anything on the site is often vastly underestimated, because it ultimately includes the cost of bringing all websites that share that style into line with the new standard (a process that often takes *years* to complete).
 

@@ -116,14 +116,14 @@ Here are some examples of pages created using Origami components.  These are all
 * [Error aggregator](http://jsbin.com/ficavi/4) (Uses grid, forms, techdocs, date)
 
 
-## Initialising module components
+## initializing module components
 
-Origami components do not perform any initialisation automatically, to avoid appearing to be 'magic' and therefore potentially hard to debug.  However, modules are allowed to bind to custom versions of native browser load events:
+Origami components do not perform any initialization automatically, to avoid appearing to be 'magic' and therefore potentially hard to debug.  However, modules are allowed to bind to custom versions of native browser load events:
 
 * `o.DOMContentLoaded`
 * `o.load`
 
-If you wish to initialise Origami components that have auto-initialise capability, fire these custom events in response to the native ones:
+If you wish to initialize Origami components that have auto-initialize capability, fire these custom events in response to the native ones:
 
 	if (document.readyState === 'interactive' || document.readyState === 'complete') {
 		document.dispatchEvent(new CustomEvent('o.DOMContentLoaded'));
@@ -132,4 +132,4 @@ If you wish to initialise Origami components that have auto-initialise capabilit
 		document.dispatchEvent(new CustomEvent('o.DOMContentLoaded'));
 	});
 
-Alternatively, all modules that have auto-initialise capability also expose the bound function handler as part of their public API (normally as `init()`), so you can choose to only initialise the modules that you want to, in the order that you want them.
+Alternatively, all modules that have auto-initialize capability also expose the bound function handler as part of their public API (normally as `init()`), so you can choose to only initialize the modules that you want to, in the order that you want them.

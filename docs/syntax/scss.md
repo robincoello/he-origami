@@ -177,7 +177,7 @@ In order of preference, when targeting styles at a specific user agent, componen
 
 1. Assess if the proportion of impacted users worth the fix
 2. Tweak designs to accommodate most browsers instead
-3. Favour [browser hacks](http://browserhacks.com/) to avoid any external dependencies — make sure to document each time why a hack was used:
+3. Favor [browser hacks](http://browserhacks.com/) to avoid any external dependencies — make sure to document each time why a hack was used:
 
 	.el {
 		background: url('data:image/png;base64,/* data */') bottom right no-repeat;
@@ -280,7 +280,7 @@ Modules that make use of styles defined in other modules that support silent mod
 Finally, in documentation, modules *must* provide information about both silent and non-silent methods, where supported, and must put the default first (i.e. if silent mode is by default **on**, the module must document the silent mode integration first).
 
 
-##Code organisation and formatting
+##Code organization and formatting
 
 ###Layout
 

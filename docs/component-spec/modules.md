@@ -20,7 +20,7 @@ permalink: /docs/component-spec/modules/
 
 ## File structure
 
-This section is non-normative.  A module component *may* be organised as follows, but this does not imply any requirements aside from those listed above.  The following can be considered an opinion on a good file structure for a module.
+This section is non-normative.  A module component *may* be organized as follows, but this does not imply any requirements aside from those listed above.  The following can be considered an opinion on a good file structure for a module.
 
 	.
 	├─ demos
