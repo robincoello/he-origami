@@ -1,6 +1,10 @@
 {
   "name": "origami",
   "private": true,
+  "scripts": {
+    "start": "jekyll serve --watch --baseurl=''",
+    "start-sass": "grunt watch"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-sass": "*",
