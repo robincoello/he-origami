@@ -9,7 +9,7 @@ permalink: /docs/developer-guide/building-modules/
 
 Building Origami modules manually gives you the most flexibility and control, but you will need to use some specific tools.  Remember that in many cases you may be able to get started faster by using the [build service](../build-service), which will do all this for you.
 
-This tutorial assumes you are starting from a fresh install of a UNIX-like OS with a bash shell and have cloned or initalised a git repo for your project somewhere on the filesystem.  If you're a bit further along than that, feel free to skip any steps you've already completed.
+This tutorial assumes you are starting from a fresh install of a UNIX-like OS with a bash shell and have cloned or initalized a git repo for your project somewhere on the filesystem.  If you're a bit further along than that, feel free to skip any steps you've already completed.
 
 <aside>
 	<h4>No support for Windows</h4>
@@ -35,7 +35,7 @@ Node.js can be installed manually or via package management, and often ships pre
 
 <pre class="cli">
 <kbd>node -v</kbd>
-<output>v0.10.29</output>
+<output>v0.12.7</output>
 </pre>
 
 If you get an error, or the number you get does not match the most recent release shown on the [Node website](http://nodejs.org/), you need to install/upgrade Node.  If you're installing it on a personal machine, go to the Node website and click the Install button to download the installer suitable for your system:
@@ -45,6 +45,10 @@ If you get an error, or the number you get does not match the most recent releas
 If you want to install on a server or other maintained environment, you'll most likely prefer to use a package manager.  Node is available in most package management repositories, and instructions are available in the Node install guide:
 
 * [Install Node via package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager)
+
+To manage multiple Node versions, consider using Node Version Manager (nvm):
+
+* [Install Node via nvm](https://github.com/creationix/nvm#installation)
 
 ### Ruby
 
@@ -100,10 +104,10 @@ Install the build tools as a command line utility:
 
 <pre class="cli">
 <kbd>npm install -g origami-build-tools</kbd>
-<output>/home/ubuntu/.nvm/v0.10.30/bin/origami-build-tools -> /home/ubuntu/.nvm/v0.10.30/lib/node_modules/origami-build-tools/lib/origami-build-tools-cli.js
-origami-build-tools@2.0.0 /home/ubuntu/.nvm/v0.10.30/lib/node_modules/origami-build-tools
-├── which@1.0.5
-...</output>
+<output>/Users/origamiuser/.nvm/v0.12.7/bin/obt -> /Users/origamiuser/.nvm/v0.12.7/lib/node_modules/origami-build-tools/lib/origami-build-tools-cli.js
+origami-build-tools@3.3.0 /Users/origamiuser/.nvm/v0.12.7/lib/node_modules/origami-build-tools
+&hellip;
+</output>
 </pre>
 
 ### If you are using Gulp
@@ -142,7 +146,7 @@ Once you know which Origami modules you want, create a `bower.json` file in the 
 
 <aside>
 	<h4>v0.x.x: Beware!</h4>
-	<p>Versions lower than 1 (eg. <code>v0.3.2</code>) are considered experimental builds, and are treated differently by Bower.  Origami forbids the creation of components with a version lower than 1, so if you see one, it is probably not ready for use.</p>
+	<p>Versions lower than 1 (eg. <code>v0.3.2</code>) are considered pre-release builds, and newer versions may introduce breaking changes. It is not recommended to use pre-release components in production applications.</p>
 </aside>
 
 <aside>
@@ -157,7 +161,7 @@ To ensure that the Origami modules can be found, it needs to be set up to search
 	{
 		"registry": {
 			"search": [
-				"http://registry.origami.ft.com",
+				"http://origami.pearsoned.com/registry",
 				"https://bower.herokuapp.com"
 			]
 		}
@@ -301,9 +305,14 @@ Remember that because `.gitignore` starts with a dot, it may not show up in your
 You're ready to run your build.  First, use origami-build-tools to install everything else that you need, including the Origami components that you want:
 
 <pre class="cli">
-<kbd>origami-build-tools install</kbd>
+<kbd>obt install</kbd>
 <output>...output telling us which tools are being installed...</output>
 </pre>
+
+<aside>
+	<h4>Tip</h4>
+	<p>For convenience, the <code>origami-build-tools</code> command is aliased to <code>obt</code>.</p>
+</aside>
 
 This will install a number of additional tools, and create a `bower_components`directory in the root of your working tree, containing all the Origami modules you've listed in your `bower.json` file.
 
@@ -335,7 +344,7 @@ If you want to continue working on your CSS and JS code (edit your own code but 
 Since you have not saved any configuration specific to your project, you need to tell the build tools where to find the files in your project by passing arguments on the command line:
 
 <pre class="cli">
-<kbd>origami-build-tools build --js=./client/js/main.js --sass=./client/scss/main.scss --buildJs=bundle.js --buildCss=bundle.css --buildFolder=public</kbd>
+<kbd>obt build --js=./client/js/main.js --sass=./client/scss/main.scss --buildJs=bundle.js --buildCss=bundle.css --buildFolder=public</kbd>
 <output>Browserifying ./client/js/main.js
 Compiling ./client/scss/main.scss</output>
 </pre>
