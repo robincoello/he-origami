@@ -11,7 +11,7 @@ Begin by following the instructions for the [origami-build-tools](https://github
 
 ## Source control
 
-Where possible, Origami components should be released publicly via [GitHub](https://github.com/pearson-higher-ed). When deciding whether or not to release a component publicly, you _must_ understand and follow the [open source policy](). Internal components may be released to the [HE Origami Components](https://devops-tools.pearson.com/stash/projects/ORC) project in Stash. You will need to make a request for creation of a new repository from one of the owners or project administrators of the GitHub organization or Stash project, respectively.
+Where possible, Origami components should be released publicly via [GitHub](https://github.com/pearson-higher-ed). When deciding whether or not to release a component publicly, you _must_ understand and follow the [open source policy]({{ site.baseurl }}/docs/developer-guide/open-source-policy/). Internal components may be released to the [HE Origami Components](https://devops-tools.pearson.com/stash/projects/ORC) project in Stash. You will need to make a request for creation of a new repository from one of the owners or project administrators of the GitHub organization or Stash project, respectively.
 
 ## Continuous Integration
 
