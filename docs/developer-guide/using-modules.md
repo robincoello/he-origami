@@ -116,7 +116,7 @@ Here are some examples of pages created using Origami components.  These are all
 * [Error aggregator](http://jsbin.com/ficavi/4) (Uses grid, forms, techdocs, date)
 
 
-## initializing module components
+## Initializing module components
 
 Origami components do not perform any initialization automatically, to avoid appearing to be 'magic' and therefore potentially hard to debug.  However, modules are allowed to bind to custom versions of native browser load events:
 
