@@ -86,8 +86,17 @@ If you see an error, or the version does not match the latest version shown on t
 <kbd>npm install -g gulp</kbd>
 </pre>
 
-This command may prompt you for your password.  You will need administrative access to your machine to complete this step.  On Pearson-owned machines, this will typically be your PEROOT password.
+If you get an error, you may need administrative access to [install Node modules globally](#note-npm-sudo).
 
+<aside class="o-techdocs__aside--toggleable" id="note-npm-sudo">
+	<h4>Why do I get an error when installing Node modules globally?</h4>
+	<p>Depending on how you installed Node, you may get an error or be prompted for your password when installing modules globally using the <code>-g</code> flag. If you get an error, try running the command again using <code>sudo</code>:
+<pre class="cli">
+<kbd>sudo npm install -g gulp</kbd>
+</pre>
+	On Pearson-owned machines, the administrative password will typically be your PEROOT password.
+	</p>
+</aside>
 
 ## 3. Install origami build tools
 
