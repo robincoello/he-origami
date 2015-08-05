@@ -161,7 +161,7 @@ Use Google's [PageSpeed Insights](http://developers.google.com/speed/pagespeed/i
 
 ###Use the polyfill service
 
-The [Origami polyfill service](http://polyfill.webservices.ft.com) creates custom bundles of polyfills based on the exact requirements of the user's browser, so we can avoid serving unnecessary code to browsers that already support a feature natively, but we can automatically upgrade browsers that don't support the feature.
+The [Financial Times polyfill service](http://polyfill.webservices.ft.com) creates custom bundles of polyfills based on the exact requirements of the user's browser, so we can avoid serving unnecessary code to browsers that already support a feature natively, but we can automatically upgrade browsers that don't support the feature.
 
 This means you can assume modern web standards, you don't have to bundle any polyfills with your code, and performance on modern browsers is great - they get an empty file.
 

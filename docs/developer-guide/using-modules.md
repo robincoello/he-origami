@@ -46,7 +46,7 @@ Here is an example of how to integrate a cuts-the-mustard test into your page:
 
 ### Customising polyfills
 
-The example above uses the [Origami polyfill service](//polyfill.webservices.ft.com) to upgrade the browser to the latest possible support for web standards.  This can be done without arguments, in which case every possible web API that can be polyfilled will be, or if you want to be more efficient you can list only the polyfills you want to consider.  For more information see the service's own documentation.
+The example above uses the [Financial Times polyfill service](//polyfill.webservices.ft.com) to upgrade the browser to the latest possible support for web standards.  This can be done without arguments, in which case every possible web API that can be polyfilled will be, or if you want to be more efficient you can list only the polyfills you want to consider.  For more information see the service's own documentation.
 
 The polyfill service works by reading the `User-Agent` HTTP header on the request from the browser, so users of different browsers will get different responses, which may range in size from several hundred KB to an empty file.
 
