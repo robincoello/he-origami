@@ -170,7 +170,7 @@ To ensure that the Origami modules can be found, it needs to be set up to search
 	{
 		"registry": {
 			"search": [
-				"http://origami.pearsoned.com/registry",
+				"https://origami.pearsoned.com/registry",
 				"https://bower.herokuapp.com"
 			]
 		}
