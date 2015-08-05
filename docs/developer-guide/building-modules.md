@@ -322,7 +322,7 @@ You're ready to run your build.  First, use origami-build-tools to install every
 	<p>For convenience, the <code>origami-build-tools</code> command is aliased to <code>obt</code>.</p>
 </aside>
 
-This will install a number of additional tools, and create a `bower_components`directory in the root of your working tree, containing all the Origami modules you've listed in your `bower.json` file.
+This will install a number of additional tools, and create a `bower_components` directory in the root of your working tree, containing all the Origami modules you've listed in your `bower.json` file.
 
 It will also create a `node_modules` directory in the root of your working tree, containing [origami-build-tools](https://github.com/Financial-Times/origami-build-tools) and [gulp](http://gulpjs.com), which is all you need to run the build process.
 
