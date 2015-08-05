@@ -23,9 +23,9 @@ Origami's front end modules contain Sass, JavaScript and markup templates to cre
 
 Modules are all compliant with a single standardised build process, and are delivered unbuilt, so you need to build them in order to use them in your application.  There are two ways to do this - either set up the standard build process in your own project, or use our build service to fetch pre-built bundles containing the modules of your choice.
 
-For a complete list of available modules, demos, dependency information and usage instructions, the [Origami Registry](http://registry.origami.ft.com) provides a one stop shop:
+For a complete list of available modules, demos, dependency information and usage instructions, the [Origami Registry](https://origami.pearsoned.com/registry/) provides a one stop shop:
 
-* [Go to Origami Registry](http://registry.origami.ft.com)
+* [Go to Origami Registry](https://origami.pearsoned.com/registry/)
 
 Once you know which modules you want to use, consult the using modules guide for information on how to integrate them into your project:
 

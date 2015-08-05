@@ -103,11 +103,11 @@ All Origami components use pixels for length measures.  To avoid incompatibiliti
 
 ###Use standard colour palette
 
-The FT standard colour palette is available as an Origami component, [o-colors](http://registry.origami.ft.com/components/o-colors).  Use use cases rather than palette colours, adding your own use cases where needed.  If you are using Sass, avoid including any raw colour values in your Sass, except as part of defining new colour use cases.
+The FT standard colour palette is available as an Origami component, [o-colors](https://origami.pearsoned.com/registry/components/o-colors).  Use use cases rather than palette colours, adding your own use cases where needed.  If you are using Sass, avoid including any raw colour values in your Sass, except as part of defining new colour use cases.
 
 Information about how to use o-colors is available in the docs:
 
-* [Learn about o-colors](http://registry.origami.ft.com/components/o-colors)
+* [Learn about o-colors](https://origami.pearsoned.com/registry/components/o-colors)
 
 
 ###Turn off hover effects when appropriate
@@ -116,7 +116,7 @@ If the user is on a touchscreen device and does not have a mouse or similar devi
 
 Equally, when a user is scrolling, hover effects can be unintentionally triggered by content moving *under* the mouse rather than the mouse moving *over* the content, which can have a [detrimental effect on scroll performance](http://www.html5rocks.com/en/tutorials/speed/unnecessary-paints/).
 
-Consider using [o-hoverable](http://registry.origami.ft.com/components/o-hoverable), which intelligently flags when hover effects are desiriableby toggling a class on the `<html>` element.
+Consider using [o-hoverable](https://origami.pearsoned.com/registry/components/o-hoverable), which intelligently flags when hover effects are desiriableby toggling a class on the `<html>` element.
 
 
 ###Choose breakpoints based on content

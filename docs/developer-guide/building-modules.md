@@ -135,7 +135,7 @@ The packages are listed in *devDependencies* because they are not required to ru
 
 ## 4. Set up a package manifest to load Origami components
 
-Hopefully you know which Origami modules you want.  If you don't, check out the [Origami registry](http://registry.origami.ft.com) for a list of all our supported components.  You can also add any module from the [bower registry](http://bower.io/search/) that has a [commonJS interface](http://wiki.commonjs.org/wiki/Modules/1.1).
+Hopefully you know which Origami modules you want.  If you don't, check out the [Origami registry](https://origami.pearsoned.com/registry/) for a list of all our supported components.  You can also add any module from the [bower registry](http://bower.io/search/) that has a [commonJS interface](http://wiki.commonjs.org/wiki/Modules/1.1).
 
 Once you know which Origami modules you want, create a `bower.json` file in the root of your working tree.   This you have to create yourself, and it will be different for each project, but it must conform to the bower [configuration spec](http://bower.io/docs/creating-packages/), which is very similar to npm's config.  Here is an example that includes a few key components:
 
@@ -151,7 +151,7 @@ Once you know which Origami modules you want, create a `bower.json` file in the 
 		}
 	}
 
-`dependencies` is a list of the front-end modules you would like to use in your project.  If the module is in the [Origami registry](http://registry.origami.ft.com) or the [bower registry](http://bower.io/search/), you can simply specify the version number you want (using [semver](http://semver.org) rules), otherwise you must provide the full URL of the component's repository followed by a hash and the version you want.
+`dependencies` is a list of the front-end modules you would like to use in your project.  If the module is in the [Origami registry](https://origami.pearsoned.com/registry/) or the [bower registry](http://bower.io/search/), you can simply specify the version number you want (using [semver](http://semver.org) rules), otherwise you must provide the full URL of the component's repository followed by a hash and the version you want.
 
 <aside>
 	<h4>v0.x.x: Beware!</h4>

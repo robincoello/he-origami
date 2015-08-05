@@ -42,7 +42,7 @@ Prepare your jsbin by pasting in the Origami boilerplate code explained above; n
 
 As an example, we'll add the standard FT header and footer.  All Origami components are listed in a directory called the Origami Registry, so go there now and find the header component:
 
-* [Go to the Origami Registry](http://registry.origami.ft.com)
+* [Go to the Origami Registry](https://origami.pearsoned.com/registry/)
 
 To find the header:
 
