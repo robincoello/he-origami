@@ -319,7 +319,6 @@ You're ready to run your build.  First, use origami-build-tools to install every
 </pre>
 
 <aside>
-	<h4>Tip</h4>
 	<p>For convenience, the <code>origami-build-tools</code> command is aliased to <code>obt</code>.</p>
 </aside>
 
