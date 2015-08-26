@@ -7,7 +7,7 @@ permalink: /docs/developer-guide/creating-modules/
 
 # Creating new Origami modules
 
-Begin by following the instructions for the [origami-build-tools](https://github.com/Financial-Times/origami-build-tools) (if not already installed) and the [o-component-blueprint](https://github.com/Financial-Times/o-component-blueprint) component. When complete, you will have installed the local development tools and established the project structure for the new component.
+Begin by following the instructions for the [origami-build-tools](https://github.com/Financial-Times/origami-build-tools) (if not already installed) and the [o-component-blueprint](https://github.com/Pearson-Higher-Ed/o-component-blueprint) component. When complete, you will have installed the local development tools and established the project structure for the new component.
 
 ## Using the Origami build tools
 
