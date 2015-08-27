@@ -63,7 +63,7 @@ If you do copy a reference to `this` into a separate variable, make it semantic:
 
 
 
-## initialization
+## Initialization
 
 Modules *must* do as little as possible on parse, instead deferring start-up tasks to a publicly exported, static 'init' function that should be either invoked explicitly using the module's API, or automatically by binding to the `o.DOMContentLoaded` or `o.load` events.
 
