@@ -11,10 +11,10 @@ If building modules sounds like a lot of work, you can let someone else do it fo
 
 This is especially useful for bootstrapping early stage prototypes as well as building hacks, experiments, and adding components to existing sites that weren't built with Origami in mind.  The service offers high availability, reliability, HTTPS with the same hostname and path, and its own CDN cache layer, so can be used for client-side requests.
 
-The build service hosts its own API and technical documentation at [origami.pearsoned.com/build](http://origami.pearsoned.com/build).
+The build service hosts its own API and technical documentation at [origami.pearsoned.com/build](https://origami.pearsoned.com/build/v1/).
 
 <aside>
-	<strong>WARNING:</strong> The build service is not yet available in production. For testing, prototypes, and other non-production uses, you may use the <a href="https://origami-stg.pearsoned.com/build/v1/">staging service</a>.
+	<p><strong>WARNING:</strong> The build service is currently in <strong>beta</strong>. Please review the <a href="https://origami.pearsoned.com/build/v1/#beta-notice">terms and conditions</a> prior to using the service.</p>
 </aside>
 
 ## Building a page
