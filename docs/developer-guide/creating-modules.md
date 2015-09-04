@@ -49,6 +49,23 @@ Any [module]({{ site.baseurl }}/docs/component-spec/modules/#module-components) 
 
 A [module]({{ site.baseurl }}/docs/component-spec/modules/#module-components) component release occurs when a new git tag is pushed to the remote repository. Follow the guidelines for [managing new releases]({{ site.baseurl }}/docs/component-spec/modules/#managing-new-releases). The registry will pick up new versions during the next automated scan.
 
+Use the following checklist to verify that the component is ready for release:
+
+- The component has a [valid]({{ site.baseurl }}/docs/syntax/origamijson/) `origami.json` manifest.
+- The component can be built with [origami-build-tools](https://github.com/Financial-Times/origami-build-tools): `obt build`.
+- The component can be built using the Origami [build service](https://origami.pearsoned.com/build/v1/).
+- Linting and unit tests pass: `obt verify && obt test`.
+- [Demos]({{ site.baseurl }}/docs/component-spec/modules/#tests-and-demos) have been provided to demonstrate key functionality.
+- A readme is included with the component that includes documentation that is not otherwise provided by the Origami [specification]({{ site.baseurl}}/) or other services.
+
+*If publishing to GitHub*
+
+- [Travis CI](https://travis-ci.org/) is configured to run when changes are pushed to the remote repository.
+
+*If publishing internally*
+
+- Continuous integration is configured to run when changes are pushed to the remote repository.
+
 ## FAQ
 
 - ***Should I commit `.editorconfig`, `.jshintrc`, etc. files to the repository?*** In general, no. Components *should* use the settings provided by `origami-build-tools` to ensure consistency across all modules. However, a component *may* provide overrides if absolutely necessary.
